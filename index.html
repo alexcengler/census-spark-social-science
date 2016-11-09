@@ -1,0 +1,216 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.min.css">
+        <link rel="stylesheet" href="black.css">
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h3><b>Spark Social Science</b></h3>
+                    <p>Urban's Approach to Big Data Statistics<p>
+                </section>
+                <section>
+   
+                    <section>
+                        <h3>Me</h3>
+                         <ul>
+                            <li>Alex, hi.</li><br>
+                            <li>Data Scientist @ Urban Institute
+                                <ul>
+                                    <li>Big Data Statistics w/ Spark</li>
+                                    <li>Natural Language Processing</li>
+                                    <li>Machine Learning</li>
+                                </ul>
+                            </li><br>
+                            <li>Professor of Data [Viz & Science] @ JHU & GU</li>
+                                <ul>
+                                    <li>Data Viz for Policy Analysis</li>
+                                    <li>Data Science for Public Policy</li>
+                                </ul>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <img src="images/urban.png" width="400" />    
+                        <img src="images/centers.png" width="700"/>                
+                    </section>   
+
+                    <section>
+                        <img src="images/brookings.jpeg" width="800"/>    
+                    </section>   
+
+                    <section>
+                        <img src="images/prison.png" width="800"/> <br> 
+                        <a href="http://webapp.urban.org/reducing-mass-incarceration/">Prison Population Forecaster</a>      
+                    </section>  
+                    <section>
+                        <img src="images/immig.png" width="1100"/> <br> 
+                        <a href="http://apps.urban.org/features/ncdb/immigrants-reshaping-residential-segregation/">Immigration and Residential Segregation</a>   
+                    </section>  
+
+                    <section>
+                        <a href="https://alexcengler.github.io/tanf-exploration/"> Works in progress...</a>
+                    </section> 
+                     
+                </section>
+
+
+                <section>
+                    <section>
+                        <h3>Our Problem</h3>
+                        <ul>
+                            <li>Big Data</li>
+                            <li>Small Budget</li>
+                            <li>Advanced Statistics</li>
+                            <li>Programming Limitations</li>
+                        </uL>
+                    </section>
+                    <section>
+                        <h3>'Big Data'</h3>
+                         <ul>
+                            <li>~One Billion Rows (Growing to 2.5B)</li>
+                            <li>Currently ~1TB of Data</li>
+                            <li>Couple Hundred Columns (But this shouldn't matter)</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3><u>Small</u> Budget</h3><br>
+                        
+                        <p>Affordability from Elasticity</p>
+                        <p>Standing Clusters - either in Cloud or on Premise are unaffordable.</p>
+                    </section>
+                    <section>
+                        <h3>Advanced Statistics<br>
+                        <img src="images/convex.png"/>                
+                    </section>    
+                    <section>
+                        <h3>Programming Limitations</h3><br>
+                         <ul>
+                            <li>Preference for SAS/STATA</li>
+                            <li>Some R-Users, a few Python-Users</li>
+                            <li>Java/Scala/C are off the table</li>
+                        </ul>       
+                        <p>Accessibility as a General Concern</p>      
+                    </section>          
+                </section>
+                <section>
+                    <section>
+                        <h3>Our Solution</h3>
+                        <ul>
+                            <li>Apache Spark</li>
+                            <li>R/Python w/ IDEs in Browser</li>
+                            <li>AWS Elastic MapReduce (EMR)</li>
+                        </uL>
+                    </section>
+                    <section>
+                        <h3><a href="http://spark.apache.org/">Apache Spark</a></h3>
+                        <ul>
+                            <li>Distributed Memory Framework for Big Data</li>
+                            <li>Written in Scala/Java but has R/Python APIs</li>
+                            <li>Good & Improving Statistical Methods</li>
+                            <li>Free & Open Source</li>
+                        </ul><br>
+                        <img src='images/distribute.png' width="700"/>
+                    </section>
+
+                    <section>
+                        <p>Relatively Familiar Languages</p>
+                        <ul>
+                            <li>SparkR</li>
+                            <li>PySpark</li>
+                        </ul>
+                        <br><br><br>
+                        <p>Development Environments in Browser</p>
+                        <ul>
+                            <li>RStudio for R</li>
+                            <li>Jupyter Notebooks for Python</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Amazon Web Services (AWS) Elastic MapReduce (EMR)</h3>
+                        <ul>
+                            <li>Elastic - Only Pay for Clusters During Use</li>
+                            <li>Fast - 10-12 Min Spin Up w/ Bootstrap</li>
+                            <li>Free Data Transfer From S3 (AWS Storage)</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Amazon Web Services (AWS) Elastic MapReduce (EMR)</h3>
+                        <p>Also Cheap: </p>
+                        <p>Four R3.8X Large EC2 Instances (Renting Four Computers in the Sky) gets you:
+                        </p>
+                        <ul>
+                            <li>244 GB Memory Each (~1TB Total)</li>
+                            <li>32v vCPU Each (128 Total)</li>
+                            <li>1300 GB SSD Storage</li>
+                        </ul>
+                        <p>All for ~$10/Hour</p>
+                    </section>
+
+                    <section>
+                        <h3>Our Solution (Theory)</h3>
+                        <img src="images/stack1.png" width="600"/>
+                    </section>
+
+                    <section>
+                        <img src="images/stack2.png" width="600"/>
+                    </section>
+
+                    <section>
+                        <h3>New Problem - How do Researchers Use This?</h3>
+                        <ul>
+                            <li>Create AWS Account</li>
+                            <li>Download PPM Key, Create PPK Key w/ PuttyGen</li>
+                            <li>Install AWS Command Line</li>
+                            <li>Reference Linux Command Line Bootstrap Script</li>
+                            <li>Install/Use Putty for SSH</li>
+                            <li>Run FoxyProxy for Portforwarding</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Instead: AWS CloudFormation</h3>
+                    </section>
+
+                </section>
+                <section>
+                    <section>
+                        <h3>Big Data Social Science</h3>
+                        <p>Some Considerations</p>
+                    </section>
+
+                    <section>
+                        <p>Scatterplots Don't Work</p>
+                        <img src="images/scatter.png">
+                    </section>
+                   <section>
+                        <p>Tile Plots (Aka Bivariate Histograms) Do</p>
+                        <img src="images/biv.png" width="450">
+                    </section>
+
+                   <section>
+                        <p>Parallelized Statistics</p>
+                        <ul>
+                            <li>Generalized Linear Models (LM-BFGS)</li>
+                            <li>Iteratively Reweighted Least Squares & Penalized Regression (OWL-QN)</li>
+                            <li>Survival Models?</li>
+                            <li>Time-Series Models?</li>
+                        </ul>      
+                    </section>
+                </section>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js"></script>
+        <script>
+            Reveal.initialize({
+                transition: 'default',  // fade/slide/convex/concave/zoom
+                transitionSpeed: 'slow'
+            });
+        </script>
+    </body>
+</html>
