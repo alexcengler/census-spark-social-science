@@ -8,8 +8,8 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h3><b>Spark Social Science</b></h3>
-                    <p>Urban's Approach to Big Data Statistics<p>
+                    <h2><b>Spark Social Science</b></h2>
+                    <p>The Urban Institute's Approach to Big Data Statistics<p>
                 </section>
                 <section>
    
@@ -17,6 +17,7 @@
                         <h3>Me</h3>
                          <ul>
                             <li>Alex, hi.</li><br>
+                            <li>@alexcengler</li><br>
                             <li>Data Scientist @ Urban Institute
                                 <ul>
                                     <li>Big Data Statistics w/ Spark</li>
@@ -49,10 +50,6 @@
                         <img src="images/immig.png" width="1100"/> <br> 
                         <a href="http://apps.urban.org/features/ncdb/immigrants-reshaping-residential-segregation/">Immigration and Residential Segregation</a>   
                     </section>  
-
-                    <section>
-                        <a href="https://alexcengler.github.io/tanf-exploration/"> Works in progress...</a>
-                    </section> 
                      
                 </section>
 
@@ -70,9 +67,10 @@
                     <section>
                         <h3>'Big Data'</h3>
                          <ul>
-                            <li>~One Billion Rows (Growing to 2.5B)</li>
-                            <li>Currently ~1TB of Data</li>
-                            <li>Couple Hundred Columns (But this shouldn't matter)</li>
+                            <li>~One Billion Rows (Growing to low tens of billions);</li>
+                            <li>Currently ~1TB of Data;</li>
+                            <li>Couple Hundred Columns;</li><br>
+                            <li>Ideally, this, or even several orders of magnitude higher, should be trivial.</li>
                         </ul>
                     </section>
                     <section>
@@ -83,7 +81,7 @@
                     </section>
                     <section>
                         <h3>Advanced Statistics<br>
-                        <img src="images/convex.png"/>                
+                        <img src="images/convex.png" width="800"/>                
                     </section>    
                     <section>
                         <h3>Programming Limitations</h3><br>
@@ -118,8 +116,8 @@
                     <section>
                         <p>Relatively Familiar Languages</p>
                         <ul>
-                            <li>SparkR</li>
-                            <li>PySpark</li>
+                            <li><a href="https://github.com/UrbanInstitute/sparkr-tutorials">SparkR</a></li>
+                            <li><a href="https://github.com/UrbanInstitute/pyspark-tutorials">PySpark</a></li>
                         </ul>
                         <br><br><br>
                         <p>Development Environments in Browser</p>
@@ -127,6 +125,26 @@
                             <li>RStudio for R</li>
                             <li>Jupyter Notebooks for Python</li>
                         </ul>
+                    </section>
+
+                    <section>
+                        <img src="images/rstudio.png" width="1000">
+                    </section>
+                    <section>
+                        <h4>Reading in Data</h4>
+                        <img src="images/readR.png" width="800">
+                    </section>
+                    <section>
+                        <h4>Data Manipulation</h4>
+                        <img src="images/manipR.png" width="800">
+                    </section>
+                    <section>
+                        <h4>Statistical Methods</h4>
+                        <img src="images/statsR.png" width="800">
+                    </section>
+                    <section>
+                        <h4>Histogram</h4>
+                        <img src="images/histR.png" width="800">
                     </section>
 
                     <section>
@@ -157,6 +175,7 @@
                     </section>
 
                     <section>
+                        <h3>Our Solution (Reality)</h3>
                         <img src="images/stack2.png" width="600"/>
                     </section>
 
@@ -171,10 +190,31 @@
                             <li>Run FoxyProxy for Portforwarding</li>
                         </ul>
                     </section>
-
                     <section>
-                        <h3>Instead: AWS CloudFormation</h3>
+                        <h3>Instead: <a href="https://github.com/UrbanInstitute/spark-social-science/blob/master/sparkr/EMR_SPARK_RSTUDIO_TEMPLATE.json">AWS CloudFormation</a></h3>
                     </section>
+                    <section>
+                        <img src="images/CF.png" width="800"/>
+                    </section>
+                    <section>
+                        <h3>Data Security & Access</h3>
+                        <ul>
+                            <li>FedRamp Authority to Operate (ATO)</li>
+                            <li>Virtual Private Cloud</li>
+                            <li>Centrally Controlled Data Access in S3</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Use Cases</h3>
+                        <ul>
+                            <li>Large datasets from government and non-governmental sources;</li> 
+                            <li>Microsimulation in the Cloud;</li>
+                            <li>Synthetic Data Generation.</li>
+                        </ul>
+                    </section>  
+
+
+
 
                 </section>
                 <section>
